@@ -1,0 +1,170 @@
+@import "nullstyle.scss";
+@import url(https:googleapis.com/css?family=lato:400,300,700,900);
+ body {
+    font-family: Lato;
+    max-width: 1300px;
+    margin: 0 auto;
+ }
+.about {
+    &__body{
+        max-width: 823px;
+        height: 550px;
+        margin: 0px auto;
+    }
+    &__header {
+        margin: 5px 0px 65px 0px;
+    }
+    &__title {
+        margin: 0px 0px 30px 0px;
+
+    }
+    &__text {
+        max-width: 688px;
+        color: rgb(88, 88, 88);
+        font-size: 25px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 25.89px;
+        margin: 0px auto;
+    }
+    &__row {
+        display: flex;
+        height: 350px;
+        font-size: 0;
+        margin: 0px -15px;
+    }
+    &__column {
+        flex: 0 0 33.333%;
+        padding: 0px 15px;
+    }
+ }
+ .title {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 15px 0px 0px 0px;
+    text-transform: uppercase;
+    letter-spacing: 8.95px;
+    position: relative;
+    text-align: center;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        bottom: 0;
+        height: 1px;
+        left: 46.555%;
+        background-color: blue;
+        margin: 0px 0px 0px -30px;
+    }
+ }
+ .item-about {
+    overflow: hidden;
+    &__icon {
+        margin: 0px auto;
+        border-radius: 50%;
+        width: 92px;
+        height: 92px;
+        border: 2px solid blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: fill;
+        overflow: hidden; } 
+    &__title {
+        text-align: center;
+        color: #000;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 3.52px;
+        margin: 10px 0px 35px 0px;
+        a {
+            color: inherit;
+        }
+    }
+    &__title__button {
+        
+        text-decoration: none;
+        position: relative;
+        font-size: 22px;
+        letter-spacing: 3.52px;
+        overflow: hidden;
+        &:hover {
+            transform: scale(1.5);
+            opacity: .2;
+        }
+        // &__title__button:active {
+        //     .item-about__text {
+        //         transform: translate(0px, 0px);
+        //     }
+        // }
+    }
+    &__text {
+        text-align: center;
+        height: 165px ;
+        width: 90px;
+        margin: 0px 80px 0px 80px;
+        color: rgb(88, 88, 88);
+        font-size: 20px;
+        display: none;
+        transition: display 0.3s ease 0s;
+        .item-about__title__button:active & {
+            display: inline-block;
+        }
+    }
+    &__img {
+        height: 100px;
+        width: 150px;
+    }
+ }
+ 
+ .main {
+    &__body {
+        max-width: 823px;
+        max-height: 1100px;
+        margin: 50px auto auto auto;
+    }
+    &__header{
+        margin: 20px 0px 20px 0px;
+    }
+    &__title {
+        margin: 0px 0px 20px 0px;
+    }
+    &__string{
+        display: flex;
+        height: 500px;
+        margin: 0px 0px 20px 0px;
+    }
+    &__column {
+        flex: 0 0 50%;
+        padding: 100px 15px 0px 0px;
+    }
+ }
+ .item-main {
+    height: 500px;
+    max-width: 50%;
+    &__img {
+        border: 2px solid blue;
+        border-radius: 100%;
+        height: 250px;
+        width: 250px;
+        margin: 10px 0px 0px 0px;
+        object-fit: fill;
+        overflow: hidden;
+    }
+    &__object {
+        height: 257px;
+        width:257px;
+    }
+    &__text {
+        text-align: center;
+        height: 500px;
+        color:rgb(88, 88, 88);
+        font-size: 20px;
+    }
+ }
+ .invisible {
+    // display: none;
+ }
+/* сверху | справа | снизу | слева 
+margin: 2px 1em 0 auto;
+*/
